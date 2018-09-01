@@ -1,0 +1,17 @@
+/*import google font classes*/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu');
+/*reset browser specific styles*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
+	border: none;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	color: inherit;
+}

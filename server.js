@@ -18,8 +18,8 @@ var app        = express();
 
 // Require models
 /////////////////////////////////////////////////////////////////////
-// Donator model
-var Donator = require("./models/Donor.model");
+// Donor model
+var Donor = require("./models/Donor.model");
 
 // Mongoose configuration
 /////////////////////////////////////////////////////////////////////
@@ -47,6 +47,19 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Root route for landing page
 app.get("/", function(req, res){
     res.render("home");
+});
+app.post("/addtodb", function(req, res){
+    var donor = {
+        name: req.body.name,
+        email: req.body.email
+    }
+    Donor.create(donor, function(err, newdonor){
+        if(err){
+            console.log(err);
+        } else {
+            res.json(newdonor);
+        }
+    });
 });
 
 // Host server on port

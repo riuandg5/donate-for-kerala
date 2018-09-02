@@ -146,6 +146,7 @@ a{
 	color: white;
 }
 .hero div{
+	position: relative;
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
@@ -167,6 +168,20 @@ a{
 	text-align: justify;
 	line-height: 1.8;
 	overflow-y: auto;
+}
+.hero div .btn{
+	position: absolute;
+	bottom: 20px;
+	width: 150px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-align: center;
+	background-color: rgba(30,144,255,0.8);
+	color: white;
+}
+.hero div .btn:hover{
+	background-color: rgba(30,144,255,1);
 }
 /*form*/
 .form-bg{

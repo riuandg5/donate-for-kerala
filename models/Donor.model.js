@@ -1,0 +1,16 @@
+// Require or import node modules
+/////////////////////////////////////////////////////////////////////
+// Mongoose or MongoDB object modeling tool
+var mongoose = require("mongoose");
+
+// Schema
+/////////////////////////////////////////////////////////////////////
+// Donor schema
+var donorSchema = new mongoose.Schema({
+	name: String,
+	email: String
+});
+
+// Export donor schema in main app
+/////////////////////////////////////////////////////////////////////
+module.exports = mongoose.model("Donor", donorSchema);

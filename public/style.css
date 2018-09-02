@@ -15,6 +15,13 @@
 a{
 	color: inherit;
 }
+.btn{
+	width: 150px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-align: center;
+}
 /*navbar*/
 .navbar{
 	position: absolute;
@@ -172,11 +179,6 @@ a{
 .hero div .btn{
 	position: absolute;
 	bottom: 20px;
-	width: 150px;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-size: 18px;
-	text-align: center;
 	background-color: rgba(30,144,255,0.8);
 	color: white;
 }
@@ -227,8 +229,7 @@ a{
 	background-color: rgba(255,255,255,0.1);
 }
 form .form-head{
-	-ms-flex-preferred-size: 140px;
-	    flex-basis: 140px;
+	flex: 0 0 140px;
 	padding: 30px 20px;
 	border-radius: 10px 10px 0 0;
 	display: -webkit-box;
@@ -275,32 +276,91 @@ form .form-title p{
 	color: rgba(255,255,255,0.7);
 }
 form .form-body{
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	flex-grow: 1;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 form .form-body p{
 	margin-bottom: 20px;
 	text-align: center;
 }
-form input{
+form .form-body .arrow-back{
+	width: 18px;
+	margin-top: 12px;
+}
+form .form-body .currency{
 	width: 100%;
+	overflow-y: auto;
+}
+.currency::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+.currency::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 4px rgba(255,255,255,0.3);
+            box-shadow: inset 0 0 4px rgba(255,255,255,0.3);
+    border-radius: 3px;
+}
+.currency::-webkit-scrollbar-thumb{
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 3px;
+}
+.currency .coin{
+	width: 98%;
+	line-height: 1.66;
 	font-size: 18px;
 	padding: 10px 20px;
 	margin-bottom: 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: flex;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.2);
+	color: white;
+}
+.currency .coin:last-child{
+	margin-bottom: 0;
+}
+.currency .coin:hover{
+	background-color: white;
+	color: black;
+}
+.currency .coin .coin-img{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.currency .coin .arrow-img{
+	width: 10px;
+	height: 18px;
+	vertical-align: middle;
+	margin: auto 0;
+	margin-left: auto;
+}
+form input{
+	width: 100%;
+	line-height: 1.66;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	border: 1px solid rgba(255,255,255,0.8);
 	border-radius: 5px;
 	background-color: rgba(255,255,255,0.8);
 }
-form input[type="submit"]{
+form input:last-child{
+	margin-bottom: 0;
+}
+form .btn{
 	position: absolute;
-	bottom: 0;
+	bottom: 20px;
 	right: 20px;
-	width: 150px;
 	background-color: rgba(30,144,255,0.8);
 	color: white;
 }
-form input[type="submit"]:hover{
+form .btn:hover{
 	background-color: rgba(30,144,255,1);
 }
 /*footer*/

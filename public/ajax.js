@@ -1,6 +1,5 @@
-$('form').on('click', '#addtodb', function(e) {
+$('form').on('submit', function(e) {
 	e.preventDefault();
-	$('#addtodb').val("Loading...");
 	var donor = $(this).serialize();
 	$.post('/addtodb', donor, function(newdonor) {
 		console.log(newdonor);

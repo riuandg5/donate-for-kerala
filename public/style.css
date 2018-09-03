@@ -28,7 +28,6 @@ a{
 	width: 100%;
 	padding: 0 10%;
 	font-size: 0;
-	line-height: 3;
 	z-index: 10;
 	border-bottom: 1px solid rgba(0,0,0,0.9);
 	display: -webkit-box;
@@ -46,6 +45,7 @@ a{
 .nav{
 	display: inline-block;
 	font-size: 15px;
+	line-height: 4;
 	padding: 0 50px;
 	white-space: nowrap;
 }
@@ -60,6 +60,7 @@ a{
 	letter-spacing: 0.1em;
 	margin-right: auto;
 	font-size: 20px;
+	line-height: 3;
 	font-weight: bold;
 }
 .nav-brand i{

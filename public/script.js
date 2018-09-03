@@ -9,3 +9,8 @@ window.addEventListener("resize", function(){
         responsive.classList.remove("nav-is-visible");
     }
 });
+$("#gotoform").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#form").offset().top
+    }, 1500);
+});

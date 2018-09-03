@@ -1,7 +1,7 @@
 // Environment variables
 /////////////////////////////////////////////////////////////////////
 var port  = process.env.PORT || 3085;
-var dburi = process.env.DBURI || "mongodb://localhost/donateforkerala";
+var dburi = "mongodb://donor:donate1@ds143262.mlab.com:43262/donateforkerala" || "mongodb://localhost/donateforkerala";
 
 // Require or import node modules
 /////////////////////////////////////////////////////////////////////

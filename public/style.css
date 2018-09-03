@@ -26,11 +26,11 @@ a{
 .navbar{
 	position: absolute;
 	width: 100%;
-	padding: 0 2.5%;
+	padding: 0 10%;
 	font-size: 0;
 	line-height: 3;
 	z-index: 10;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.9);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -40,17 +40,17 @@ a{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	background-color: rgba(0,0,0,0.9);
-	color: rgba(255,255,255,0.6);
+	background-color: rgba(12,235,235,0.6026785714285714);
+	color: rgba(0,0,0,1);
 }
 .nav{
 	display: inline-block;
-	font-size: 20px;
-	padding: 0 10px;
+	font-size: 15px;
+	padding: 0 50px;
 	white-space: nowrap;
 }
 .nav:hover{
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(0,0,0,0.3);
 	color: white;
 }
 .nav i{
@@ -59,6 +59,7 @@ a{
 .nav-brand{
 	letter-spacing: 0.1em;
 	margin-right: auto;
+	font-size: 20px;
 	font-weight: bold;
 }
 .nav-brand i{
@@ -149,7 +150,8 @@ a{
 	display: -ms-flexbox;
 	display: flex;
 	font-size: 16px;
-	background-color: rgba(0,0,0,0.3);
+/*	background-color: rgba(97, 255, 53, 0.5);
+*/	background: linear-gradient(180deg, rgba(12,235,235,0.6026785714285714) 0%, rgba(32,227,178,0.5998774509803921) 46%, rgba(41,255,198,0.6026785714285714) 84%);
 	color: white;
 }
 .hero div{

@@ -354,6 +354,9 @@ form input{
 	border-radius: 5px;
 	background-color: rgba(255,255,255,0.8);
 }
+form input:focus{
+	background-color: white;
+}
 form input:last-child{
 	margin-bottom: 0;
 }

@@ -12,7 +12,7 @@ $(window).resize(function(){
     }
 });
 // animate scroll to id
-$(".nav:not(.toggler)").click(function(){
+$('.scroll').click(function(){
     var href = $(this).attr("href");
     $('html, body').animate({
         scrollTop: $(href).offset().top

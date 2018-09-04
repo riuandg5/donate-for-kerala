@@ -14,24 +14,11 @@
 		<div class="form-body">
 			<p>Select currency</p>
 			<div class="currency">
-				<button type="submit" name="coin" value="BTC" class="coin">
-					<img class="coin-img" src="/form-img.png"> Bitcoin <img class="arrow-img" src="/arrow.png">
+			<% coins.forEach(function(coin){ %>
+				<button type="submit" name="coin" value="<%= coin.name %>" class="coin">
+					<img class="coin-img" src="<%= coin.image %>"><%= coin.fullname %><img class="arrow-img" src="/arrow.png">
 				</button>
-				<button type="submit" name="coin" value="ETH" class="coin">
-					<img class="coin-img" src="/form-img.png"> Ethereum <img class="arrow-img" src="/arrow.png">
-				</button>
-				<button type="submit" name="coin" value="ABC" class="coin">
-					<img class="coin-img" src="/form-img.png"> AbcCoin <img class="arrow-img" src="/arrow.png">
-				</button>
-				<button type="submit" name="coin" value="BTC" class="coin">
-					<img class="coin-img" src="/form-img.png"> Bitcoin <img class="arrow-img" src="/arrow.png">
-				</button>
-				<button type="submit" name="coin" value="ETH" class="coin">
-					<img class="coin-img" src="/form-img.png"> Ethereum <img class="arrow-img" src="/arrow.png">
-				</button>
-				<button type="submit" name="coin" value="ABC" class="coin">
-					<img class="coin-img" src="/form-img.png"> AbcCoin <img class="arrow-img" src="/arrow.png">
-				</button>
+			<% }) %>
 			</div>
 			<div class="arrow-back">
 				<a href="/form/<%= donorid %>"><i class="fas fa-arrow-left"></i></a>

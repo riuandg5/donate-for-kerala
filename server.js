@@ -46,19 +46,53 @@ app.use(bodyParser.urlencoded({extended: true}));
 /////////////////////////////////////////////////////////////////////
 const coins = [
     {
-        name: "BTC",
-        address: "btcbtcbtcbtc",
-        qr: "/qrcode.png"
+        name: "DASH",
+        fullname: "Dash",
+        image: "/form-img.png",
+        address: "XakKySKC4LhJB92hZhQDCXsHiLexCDvsgo",
+        qr: "/qr/dash.png"
     },
     {
-        name: "ETH",
-        address: "ethethetheth",
-        qr: "/qrcode.png"
+        name: "ONION",
+        fullname: "DeepOnion",
+        image: "/form-img.png",
+        address: "DUYBfYuE7DqsNdkoTpQsNtctPe4W9w6jpq",
+        qr: "/qr/onion.png"
     },
     {
-        name: "ABC",
-        address: "abcabcabcabc",
-        qr: "/qrcode.png"
+        name: "DGB",
+        fullname: "Digibyte",
+        image: "/form-img.png",
+        address: "D5CagSbwQ3NzZCciSQ5YtmM6m8oZVFvBMj",
+        qr: "/qr/dgb.png"
+    },
+    {
+        name: "DOGE",
+        fullname: "Dogecoin",
+        image: "/form-img.png",
+        address: "6JMBmYdSQmokNya9YbWQrVJF7aTsxM3xxsQjkzpSNkVHEyEw52Q",
+        qr: "/qr/doge.png"
+    },
+    {
+        name: "NEO",
+        fullname: "Neo",
+        image: "/form-img.png",
+        address: "ARvyqJ1XWTaEoH5M7WkXnLGf8giJ4wxfuv",
+        qr: "/qr/neo.png"
+    },
+    {
+        name: "XRP",
+        fullname: "Ripple",
+        image: "/form-img.png",
+        address: "rpR86W3H1CQNJDTZmozTJftPHyM81A5UbU",
+        qr: "/qr/xrp.png"
+    },
+    {
+        name: "ZEC",
+        fullname: "Zcash",
+        image: "/form-img.png",
+        address: "5J2rUbAUr1WxLN8zMCtSEsK1e9zLTDmhMhHWSWBYZ6HeSGSiPUy",
+        qr: "/qr/zec.png"
     }
 ];
 
@@ -98,7 +132,7 @@ app.post("/form", function(req, res){
 });
 // Route to show availabe coins
 app.get("/form/currency/:donorid", function(req, res){
-    res.render("form-coin", {donorid: req.params.donorid});
+    res.render("form-coin", {donorid: req.params.donorid, coins: coins});
 });
 // Route to post coin name
 app.post("/form/currency/:donorid", function(req, res){

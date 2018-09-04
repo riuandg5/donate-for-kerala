@@ -157,17 +157,19 @@ a{
 	padding: 100px 20px 40px 20px;
 	font-size: 16px;
 	text-align: center;
-	/*
-	background: -webkit-linear-gradient(180deg,#4cd964 0%,#5ac8fa 100%);
-	background: -o-linear-gradient(180deg,#4cd964 0%,#5ac8fa 100%);
-	background: linear-gradient(180deg,#4cd964 0%,#5ac8fa 100%);
-	*/
+
+	background: -webkit-linear-gradient(450deg,#4cd964 0%,#5ac8fa 100%);
+	background: -o-linear-gradient(450deg,#4cd964 0%,#5ac8fa 100%);
+	background: linear-gradient(450deg,#4cd964 0%,#5ac8fa 100%);
+
 	/*
 	background: rgb(0,92,151);
 	background: linear-gradient(180deg, rgba(0,92,151,1) 0%, rgba(54,55,149,1) 90%);
 	*/
+	/*
 	background: rgb(44,62,80);
 	background: linear-gradient(50deg, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 90%);
+	*/
 	color: white;
 }
 @media (min-width: 768px){

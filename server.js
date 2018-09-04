@@ -42,22 +42,83 @@ app.use(express.static("public"));
 // Use urlencoded parsing
 app.use(bodyParser.urlencoded({extended: true}));
 
+// Array to store coins info
+/////////////////////////////////////////////////////////////////////
+const coins = [
+    {
+        name: "BTC",
+        address: "btcbtcbtcbtc",
+        qr: "/qrcode.png"
+    },
+    {
+        name: "ETH",
+        address: "ethethetheth",
+        qr: "/qrcode.png"
+    },
+    {
+        name: "ABC",
+        address: "abcabcabcabc",
+        qr: "/qrcode.png"
+    }
+];
+
 // App routes
 /////////////////////////////////////////////////////////////////////
 // Root route for landing page
 app.get("/", function(req, res){
     res.render("home");
 });
-app.post("/addtodb", function(req, res){
-    var donor = {
-        name: req.body.name,
-        email: req.body.email
-    }
-    Donor.create(donor, function(err, newdonor){
-        if(err){
+// Route to donation form
+app.get("/form", function(req, res){
+    res.render("form");
+});
+// Route to create donor
+app.post("/form", function(req, res){
+    // Find donor by email
+    Donor.findOne({email: req.body.email}, function(err, donor){
+        if(err){ // If error
+            // Log the error
             console.log(err);
-        } else {
-            res.json(newdonor);
+        } else if(donor){ // Donor found
+            // Redirect with its id to show availabe coins
+            res.redirect("/form/currency/"+donor._id);
+        } else { // No dodnor found
+            // Create donor
+            Donor.create({name: req.body.name, email: req.body.email}, function(err, newdonor){
+                if(err){ // If error
+                    // Log the error
+                    console.log(err);
+                } else { // donor created
+                    // Redirect with its id to show availabe coins
+                    res.redirect("/form/currency/"+newdonor._id);
+                }
+            });
+        }
+    });
+});
+// Route to show availabe coins
+app.get("/form/currency/:donorid", function(req, res){
+    res.render("form-coin", {donorid: req.params.donorid});
+});
+// Route to post coin name
+app.post("/form/currency/:donorid", function(req, res){
+    res.redirect("/form/currency/"+req.params.donorid+"/"+req.body.coin);
+});
+// Route to show coin info for payement
+app.get("/form/currency/:donorid/:coin", function(req, res){
+    // Search for coin info in coins array
+    var info = coins.find(coin=>coin.name===req.params.coin);
+    res.render("form-address", {coin: info, donorid: req.params.donorid});
+});
+// Route to go back to form
+app.get("/form/:donorid", function(req, res){
+    // Find donor
+    Donor.findById(req.params.donorid, function(err, donor){
+        if(err){ // If error
+            // Log the error
+            console.log(err);
+        } else { // Donor found
+            res.render("form-back", {name: donor.name, email: donor.email});
         }
     });
 });

@@ -1,0 +1,44 @@
+<% include partials/header %>
+
+<div class="form">
+	<form action="/form/currency/<%= donorid %>" method="POST">
+		<div class="form-head">
+			<div class="form-img">
+				<img src="/form-img.png">
+			</div>
+			<div class="form-title">
+				<h2>Donate for Kerala</h2>
+				<p>Donation</p>
+			</div>
+		</div>
+		<div class="form-body">
+			<p>Select currency</p>
+			<div class="currency">
+				<button type="submit" name="coin" value="BTC" class="coin">
+					<img class="coin-img" src="/form-img.png"> Bitcoin <img class="arrow-img" src="/arrow.png">
+				</button>
+				<button type="submit" name="coin" value="ETH" class="coin">
+					<img class="coin-img" src="/form-img.png"> Ethereum <img class="arrow-img" src="/arrow.png">
+				</button>
+				<button type="submit" name="coin" value="ABC" class="coin">
+					<img class="coin-img" src="/form-img.png"> AbcCoin <img class="arrow-img" src="/arrow.png">
+				</button>
+				<button type="submit" name="coin" value="BTC" class="coin">
+					<img class="coin-img" src="/form-img.png"> Bitcoin <img class="arrow-img" src="/arrow.png">
+				</button>
+				<button type="submit" name="coin" value="ETH" class="coin">
+					<img class="coin-img" src="/form-img.png"> Ethereum <img class="arrow-img" src="/arrow.png">
+				</button>
+				<button type="submit" name="coin" value="ABC" class="coin">
+					<img class="coin-img" src="/form-img.png"> AbcCoin <img class="arrow-img" src="/arrow.png">
+				</button>
+			</div>
+			<div class="arrow-back">
+				<a href="/form/<%= donorid %>"><i class="fas fa-arrow-left"></i></a>
+				<a href="/"><i class="fas fa-home"></i></a>
+			</div>
+		</div>
+	</form>
+</div>
+
+<% include partials/footer %>

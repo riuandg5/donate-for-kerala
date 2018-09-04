@@ -1,18 +1,29 @@
 <% include partials/header %>
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
 <div class="navbar">
-	<a href="#" class="nav nav-brand logo-med">DONATE FOR KERALA</a>
+	<a href="#hero" class="nav nav-brand scroll">DONATE FOR KERALA</a>
 	<a class="nav toggler"><i class="fas fa-bars"></i></a>
 	<div class="nav-responsive">
-		<a href="#stats" class="nav">Statistics</a>
-		<a href="#faq" class="nav">FAQ</a>
-		<a href="#footer" class="nav">Contact</a>
+		<a href="#stats" class="nav scroll">Statistics</a>
+		<a href="#faq" class="nav scroll">FAQ</a>
+		<a href="#footer" class="nav scroll">Contact</a>
 	</div>
 </div>
-<div class="hero">
-	<h1>Stand with Kerala</h1>
+<div id="hero" class="hero">
+	<div class="hero-head">
+		<div id="typed-strings">
+		    <p>Stand with Kerala</p>
+		    <p>Hello Aurko! :)</p>
+		</div>
+		<span id="typed"></span>
+	</div>
 	<p>Kerala is in the aftermath of an unprecedented flood havoc. The calamity has caused immeasurable misery and devastation. Hundreds of lives were lost. Thousands of homes were totally destroyed and many more were damaged, we have braved the odds. Now it is our duty to help the affected rebuild their lives. You can make a difference by joining the rebuilding efforts. Contribute generously to Lorem ipsum dolor sit amet.</p>
-	<a href="/coinbase" class="btn">Donate with BTC/ETH/BCH/LTC</a> OR <a href="/form" class="btn">Donate with other Alts</a>
+	<a href="#donate" class="btn scroll">Donate Now <i class="fas fa-heart"></i></a>
+</div>
+<div id="donate" class="section">
+	Options for donation
 </div>
 <div id="stats" class="section">
 	Donation stastics
@@ -23,5 +34,15 @@
 <div id="footer" class="footer">
 	<p><i class="fas fa-heart"></i> I Love You <i class="fas fa-heart"></i></p>
 </div>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 150,
+    backSpeed: 80,
+    backDelay: 3000,
+    loop: true,
+    // showCursor: false
+  });
+</script>
 
 <% include partials/footer %>

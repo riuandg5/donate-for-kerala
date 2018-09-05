@@ -319,14 +319,15 @@ a{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	background-color: #f2f7ff;
 	color: black;
 }
 .card .card-content .btn{
 	margin-top: 40px;
-	color: #02b3e4;
+	color: dodgerblue;
 }
 .card .card-content .btn:hover{
-	background-color: #02b3e4;
+	background-color: dodgerblue;
 	color: white;
 }
 /*footer*/

@@ -67,7 +67,7 @@ a{
 	margin-right: 3px;
 }
 .nav-brand{
-	letter-spacing: 0.1em;
+	letter-spacing: 0.12em;
 	margin-right: auto;
 	font-size: 22px;
 	line-height: 2.72;
@@ -122,7 +122,7 @@ a{
 }
 @media (min-width: 768px){
 	.navbar{
-		padding: 0 10%;
+		padding: 0 11%;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		    -ms-flex-flow: row nowrap;
@@ -140,7 +140,7 @@ a{
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
 		        flex-direction: row;
-		-ms-flex-preferred-size: auto;
+		-ms-flex-preferred-size: s;
 		    flex-basis: auto;
 	}
 	.nav-responsive .nav{
@@ -173,7 +173,7 @@ a{
 
 	/*background: rgb(0,92,151);
 	background: linear-gradient(180deg, rgba(0,92,151,1) 0%, rgba(54,55,149,1) 90%);*/
-	
+
 	/*background: rgb(44,62,80);
 	background: linear-gradient(50deg, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 90%);*/
 
@@ -181,26 +181,28 @@ a{
 }
 .hero .hero-head{
 	width: 100%;
-	margin-bottom: 25px;
+	margin-top: -45px;
+	margin-bottom: 15px;
 	text-align: center;
 }
 .hero .hero-head #typed{
-	font-size: 35px;
+	font-size: 45px;
 }
 .hero p{
 	font-size: 18px;
-	line-height: 1.5;
-	text-align: justify;
+	line-height: 1.9;
+	text-align: center;
 }
 .typed-cursor{
-	font-size: 40px;
+	font-size: 50px;
 }
 @media (min-width: 768px){
 	.hero{
 		padding: 60px 15% 0 15%;
 	}
 	.hero .hero-head #typed{
-		font-size: 50px;
+		font-size: 60px;
+		font-weight: bold;
 	}
 	.typed-cursor{
 		font-size: 55px;
@@ -210,6 +212,7 @@ a{
 	}
 }
 .hero .btn{
+	margin-top: 30px;
 	border-color: rgba(0,0,0,0);
 	background-color: rgba(0,0,0,0.2);
 }

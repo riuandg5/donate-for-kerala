@@ -18,6 +18,11 @@ $('.scroll').click(function(){
         scrollTop: $(href).offset().top
     }, 1000);
 });
+// toggle answer in faq
+$('.faq li').click(function(){
+    $(this).toggleClass('show-li')
+    $(this).children('.ans').toggleClass('show-ans');
+});
 // copy to clipboard
 $('.fa-copy').click(function(){
 	var $temp = $('<input>');

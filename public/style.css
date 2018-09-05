@@ -252,6 +252,83 @@ a{
 	height: 100vh;
 	background-color: white;
 }
+.donate{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 40px 0;
+	background-color: white;
+}
+.card{
+	width: 360px;
+	height: 100%;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.5);
+	        box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.5);
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.card .card-head{
+	width: 100%;
+	-ms-flex-preferred-size: 150px;
+	    flex-basis: 150px;
+}
+.card .card-left{
+	background: url(https://cdn.wccftech.com/wp-content/uploads/2017/12/Bulgarian-Bitcoin-Horde-01-Header-2060x1133.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.card .card-right{
+	background: url(https://i1.wp.com/dollardestruction.com/wp-content/uploads/2018/05/Altcoins-2.jpg?fit=1920%2C1080&ssl=1);
+	background-position: center;
+	background-size: cover;
+}
+.card .card-content{
+	width: 100%;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding: 30px;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: black;
+}
+.card .card-content .btn{
+	margin-top: 40px;
+	color: #02b3e4;
+}
+.card .card-content .btn:hover{
+	background-color: #02b3e4;
+	color: white;
+}
 /*footer*/
 .footer{
 	padding: 50px 0;

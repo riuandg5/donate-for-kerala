@@ -362,13 +362,13 @@ a{
 	background: -o-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
 	background: -webkit-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
 	background: -o-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
-	background: linear-gradient(-15deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
+	background: linear-gradient(-10deg, white, white 250px, #f2f7ff 250px, #f2f7ff 750px, white 650px);
 }
 .faq h1{
 	font-size: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 90px;
 	text-align: center;
-	color: #ff5483;
+	color: #54c1f2;
 }
 .faq h1 i{
 	margin-right: 20px;
@@ -379,11 +379,11 @@ a{
 	-webkit-transition: max-height 0.5s linear;
 	-o-transition: max-height 0.5s linear;
 	transition: max-height 0.5s linear;
-	font-size: 22px;
+	font-size: 23px;
 	padding: 20px 30px;
 	padding-bottom: 40px;
 	margin: 20px auto;
-	border-bottom: 1px solid #ff5483;
+	border-bottom: 1px solid #7fd7ff;
 	cursor: pointer;
 }
 .faq .show-li{
@@ -395,7 +395,7 @@ a{
 .faq li .que{
 	display: block;
 	width: 100%;
-	color: #ff5483;
+	color: #54c1f2;
 }
 .faq li .que i{
 	float: right;
@@ -415,11 +415,11 @@ a{
 	transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 	width: 100%;
 	padding-left: 20px;
-	border-left: 2px solid #ff5483;
+	border-left: 2px solid #7fd7ff;
 	margin-top: 20px;
 	font-size: 18px;
 	font-weight: lighter;
-	color: rgba(0,0,0,0.8);
+	color: rgba(74, 183, 232,0.8);
 }
 .faq li .show-ans{
 	visibility: visible;
@@ -430,7 +430,7 @@ a{
 }
 /*footer*/
 .footer{
-	padding: 50px 10%;
+	padding: 30px 10%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -444,7 +444,7 @@ a{
 	background: -o-linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);
 	background: linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);*/
 
-	background: rgb(0,92,151);
+	background: #54c1f2;
 	/*background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,92,151,1)), color-stop(90%, rgba(54,55,149,1)));
 	background: -webkit-linear-gradient(top, rgba(0,92,151,1) 0%, rgba(54,55,149,1) 90%);
 	background: -o-linear-gradient(top, rgba(0,92,151,1) 0%, rgba(54,55,149,1) 90%);

@@ -1,5 +1,5 @@
 /*import google font classes*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Ubuntu|Josefin Sans');
 /*reset browser specific styles*/
 *{
 	margin: 0;
@@ -10,7 +10,7 @@
 	border: none;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 a{
 	color: inherit;
@@ -357,7 +357,7 @@ a{
 }
 .faq{
 	height: auto;
-	padding: 40px 0;
+	padding: 45px 0;
 	background: -webkit-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
 	background: -o-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
 	background: -webkit-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);

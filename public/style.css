@@ -342,8 +342,13 @@ a{
 	.donate{
 		height: 200vh;
 		padding: 0;
-		flex-direction: column;
-		justify-content: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 	.card{
 		height: 90vh;
@@ -355,6 +360,8 @@ a{
 	padding: 40px 0;
 	background: -webkit-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
 	background: -o-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
+	background: -webkit-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
+	background: -o-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
 	background: linear-gradient(-15deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
 }
 .faq h1{
@@ -446,8 +453,15 @@ a{
 }
 @media (max-width: 768px){
 	.footer{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 }

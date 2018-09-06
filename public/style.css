@@ -157,7 +157,7 @@ a{
 /*hero*/
 .hero{
 	width: 100%;
-	height: 100vh;
+	height: 110vh;
 	padding: 60px 20px 0px 20px;
 	font-size: 16px;
 	display: -webkit-box;
@@ -207,7 +207,7 @@ a{
 	text-align: center;
 }
 .hero .hero-head #typed{
-	font-size: 45px;
+	font-size: 36px;
 }
 .hero p{
 	font-size: 18px;
@@ -215,10 +215,11 @@ a{
 	text-align: justify;
 }
 .typed-cursor{
-	font-size: 50px;
+	font-size: 41px;
 }
 @media (min-width: 768px){
 	.hero{
+		height: 100vh;
 		padding: 60px 15% 0 15%;
 	}
 	.hero .hero-head{
@@ -275,6 +276,7 @@ a{
 }
 .card{
 	width: 360px;
+	max-width: 95%;
 	height: 85%;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.5);
@@ -335,6 +337,18 @@ a{
 .card .card-content .btn:hover{
 	background-color: white;
 	color: dodgerblue;
+}
+@media (max-width: 768px){
+	.donate{
+		height: 200vh;
+		padding: 0;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.card{
+		height: 90vh;
+		margin: 6.67vh 0;
+	}
 }
 .faq{
 	height: auto;

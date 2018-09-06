@@ -25,11 +25,13 @@
 	background: rgb(0,92,151);
 	background: linear-gradient(180deg, rgba(0,92,151,1) 0%, rgba(54,55,149,1) 90%);
 	*/
-	background: rgb(44,62,80);
+	background: #c9eeff;
+	/*
 	background: -webkit-gradient(linear, left bottom, left top, from(rgba(44,62,80,1)), color-stop(90%, rgba(52,152,219,1)));
 	background: -webkit-linear-gradient(bottom, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 90%);
 	background: -o-linear-gradient(bottom, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 90%);
 	background: linear-gradient(0deg, rgba(44,62,80,1) 0%, rgba(52,152,219,1) 90%);
+	*/
 	color: white;
 }
 .form form{

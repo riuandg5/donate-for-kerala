@@ -341,7 +341,7 @@ a{
 	padding: 40px 0;
 	background: -webkit-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
 	background: -o-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
-	background: linear-gradient(-25deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
+	background: linear-gradient(-15deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
 }
 .faq h1{
 	font-size: 40px;
@@ -354,18 +354,16 @@ a{
 }
 .faq li{
 	width: 80%;
-	max-height: 66px;
+	max-height: 86px;
 	-webkit-transition: max-height 0.5s linear;
 	-o-transition: max-height 0.5s linear;
 	transition: max-height 0.5s linear;
 	font-size: 22px;
 	padding: 20px 30px;
+	padding-bottom: 40px;
 	margin: 20px auto;
-	border: 1px solid #ff5483;
-	border-radius: 5px;
+	border-bottom: 1px solid #ff5483;
 	cursor: pointer;
-	-webkit-box-shadow: 2px 2px 8px 0 rgba(46,61,73,0.1);
-	        box-shadow: 2px 2px 8px 0 rgba(46,61,73,0.1)
 }
 .faq .show-li{
 	max-height: 200px;

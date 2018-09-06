@@ -358,11 +358,9 @@ a{
 .faq{
 	height: auto;
 	padding: 45px 0;
-	background: -webkit-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
-	background: -o-linear-gradient(115deg, white, white 300px, #f2f7ff 300px, #f2f7ff 600px, white 600px);
-	background: -webkit-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
-	background: -o-linear-gradient(105deg, white, white 250px, #f2f7ff 250px, #f2f7ff 650px, white 650px);
-	background: linear-gradient(-10deg, white, white 250px, #f2f7ff 250px, #f2f7ff 750px, white 650px);
+	background: -webkit-linear-gradient(100deg, white, white 250px, #f2f7ff 250px, #f2f7ff 750px, white 650px);
+    background: -o-linear-gradient(100deg, white, white 250px, #f2f7ff 250px, #f2f7ff 750px, white 650px);
+    background: linear-gradient(-10deg, white, white 250px, #f2f7ff 250px, #f2f7ff 750px, white 650px);
 }
 .faq h1{
 	font-size: 40px;
